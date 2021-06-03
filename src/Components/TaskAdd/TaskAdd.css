@@ -1,89 +1,52 @@
-
-.btn-glyphicon {
-    padding:10px;
-    background:#ffffff;
-    margin-right:3px;
-width:45px;
-color:#0f7a6c;
-height:45px;
+.custom-search {
+  position: relative;
+  width: 300px;
 }
-
-
-    .btn{
-    color:white;
-    font-family: cursive;
-}
-.icon-btn {
-    padding: 1px 15px 5px 2px;
-    border-radius:50px;
-    height:50px;
-    background-color: #0f7a6c;
-    width:150px;
-border-color: #f5f0f2;
-    margin-left: 350px;
-    margin-top: -65px;
-padding-right: 30px;
-}
-.text-success{
-    color:#0f7a6c !important;
-   
+.custom-search-input {
+  width: 130%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  height: 50px;
+  outline: none;
 }
 .custom-search-botton {
-    position: absolute;
-    right: 3px; 
-    top: 3px;
-    bottom: 3px;
-    line-height: 1;
-    z-index: 4;
-  }
-.custom-search-input {
-    width: 60%;
-    border: 1px solid #ccc;
-    border-radius: 100px;
-    padding: 10px 100px 10px 20px; 
-    line-height: 1;
-    margin-top: 20px;
-    height:50px;
-    margin-right: 10px;
-
-    margin-left: -200px;
-    box-sizing: border-box;
-    outline: none;
-  }
-  .btn-success {
-    color: #fff;
-    background-color: #0f7a6c;
-    border-color: #f0e7ea;
+  position: absolute;
+  right: -87px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #0e7c6c;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  text-align: center;
+  padding: 4px 4px;
+  border-radius: 100px;
+  z-index: 2;
 }
-.btn-success:hover {
-    color: #fff;
-    background-color: #0f7a6c;
-    border-color: #0f7a6c;
+.fa-plus-circle {
+  font-size: 35px;
+  padding-right: 50px;
 }
-.btn:hover {
-    color: #212529;
-    text-decoration: none;
+span {
+  font-size: 18px;
+  margin-left: -47px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-    color: #fff;
-    background-color: #0f7a6c;
-    border-color: #0f7a6c;
+h1 {
+  color: #0b443b;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: -200px;
+  font-weight: 800;
+  text-align: center;
+  font-size: 50px;
 }
-.btn:hover, .btn:focus {
-    color: rgb(245, 237, 237);
-    text-decoration: none;
-}
-.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
-    color: white;
-    background-color: #0f7a6c;
-    border-color:#0f7a6c;
-}
-h1{
-    color: #0b443b;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 10px;
-    font-weight: 800;
-    text-align: center;
-    font-size: 50px;
-    
+.head {
+  padding-top: 1px;
+  margin-top: 50px;
 }

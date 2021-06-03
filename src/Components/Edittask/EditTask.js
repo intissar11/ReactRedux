@@ -1,15 +1,25 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import "../Edittask/EditTask.css"
-const EditTask = () => {
+import { Modal } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { editTask } from "../../js/Action/TaskAction";
+import "../Edittask/EditTask.css";
+const EditTask = ({ elem }) => {
   const [show, setShow] = useState(false);
-  const [task, setTask] = useState();
+  const [task, setTask] = useState(elem.description);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const dispatch = useDispatch();
+  const taskedit = () => {
+    dispatch(editTask(elem.id, task));
+    handleClose();
+  };
   return (
     <div>
-<div style={{marginTop:"-30px"}}>     <button className="bttn" onClick={handleShow} ><i className="fas fa-pencil-alt"></i></button>
-</div>
+      <div style={{ marginTop: "-30px" }}>
+        <button className="btn edit" onClick={handleShow}>
+          <i className="fas fa-pencil-alt"></i>
+        </button>
+      </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Edit Your Task </Modal.Title>
@@ -23,12 +33,12 @@ const EditTask = () => {
           />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
+          </button>
+          <button variant="primary" onClick={taskedit}>
             Save Changes
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
     </div>

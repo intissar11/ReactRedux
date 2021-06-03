@@ -2,38 +2,37 @@
   text-decoration: line-through;
   text-decoration-color: red;
 }
-.fa-check{
-  color:rgb(13, 194, 58);
+.fa-check {
+  color: rgb(13, 194, 58);
 }
-.fa-pencil-alt{
+.fa-pencil-alt {
   color: rgba(24, 106, 212, 0.829);
 }
-.fa-trash-alt{
-color:red;
+.fa-trash-alt {
+  color: red;
 }
-.btn{
+.btn {
   font-size: 20px;
-  margin-top: -40px;
-  padding:2px;
+  margin-top: -45px;
+  padding: 2px;
 }
 
-.text{
+.text {
   font-size: 15px;
   font-weight: 600;
-  color:white;
+  color: white;
   margin-right: 50%;
-  text-align:left ;
+  text-align: left;
   margin-top: 15px;
   margin-left: 5px;
 }
 .app-outer {
-  background:transparent;
+  background: transparent;
   border: 1px solid #89cfc6;
   border-radius: 25px;
   height: 55px;
-  width:500px;
+  width: 400px;
   margin: 10px;
- margin-right: 300px;
+  margin-right: 300px;
   margin-bottom: 15px;
-
 }
